@@ -16,9 +16,47 @@
     
         <span>Səbriniz üçün təşəkkür edirik</span>
        
-       <img style="width: 10%;padding: 15px 0;" src="instagram-1-svgrepo-com.svg" alt="title">
+       <img id="myImage" style="width: 10%;padding: 15px 0;cursor: pointer;" src="instagram-1-svgrepo-com.svg" alt="title">
 
     </div>
+    <script>
+        var currentDomain = window.location.hostname;
+        console.log(currentDomain,'222')
+    </script>
+       <script>
+        var myImage = document.getElementById('myImage');
+        myImage.addEventListener('click', function() {
+        if (currentDomain=='gilli1881'){
+                window.location.href = 'https://www.instagram.com/gilli1881.az/';
+}
+                      else if(currentDomain=='gulshendikmen'){
+            window.location.href = 'https://www.instagram.com/drgulshendikmen/';
+           }          else if(currentDomain=='drashraf'){
+            window.location.href = 'https://www.instagram.com/dr_ashraf_hasanzadeh/';
+           }          else if(currentDomain=='rmneshriyyati'){
+            window.location.href = 'https://www.instagram.com/rm_neshriyyat/';
+           }          else if(currentDomain=='vrproduction'){
+            window.location.href = 'https://www.instagram.com/vrproduction.az/';
+           }          else if(currentDomain=='mammoloqcerrah'){
+            window.location.href = 'https://www.instagram.com/mammoloq.dr.vuqarmahmudov/';
+           }          else if(currentDomain=='sabuhidadashov.az'){
+            window.location.href = 'https://www.instagram.com/dr.sabuhidadashov/';
+           }
+                      else if(currentDomain == 'nevrologiya'){
+            window.location.href = 'https://www.instagram.com/nevroloq.sevinc.memmedova/';
+           }
+           else if(currentDomain == 'sudvezixercengi'){
+            window.location.href = 'https://www.instagram.com/gunelqemberova/';
+           }
+           else if(currentDomain == 'onurga'){
+            window.location.href = 'https://www.instagram.com/nevroloq_dr.ruhiyye/';
+           }
+           else if(currentDomain == 'parvinmikayilzade'){
+            window.location.href = 'https://www.instagram.com/dr.parvin_mikayilzade/';
+           }
+           
+        });
+    </script>
     <style>
         body {
             display: flex;
